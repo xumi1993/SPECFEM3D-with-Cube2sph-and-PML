@@ -30,10 +30,10 @@
 # Makefile.  Generated from Makefile.in by configure.
 #######################################
 
-FC = ifort
+FC = mpiifort
 FCFLAGS = -g ${DEBUG_COUPLED_FLAG}
 FC_DEFINE = -D
-MPIFC = mpif90
+MPIFC = mpiifort
 MPILIBS = 
 
 FLAGS_CHECK = -xHost -fpe0 -ftz -assume buffered_io -assume byterecl -align sequence -std03 -diag-disable 6477 -implicitnone -gen-interfaces -warn all -O3 -check nobounds -DFORCE_VECTORIZATION
@@ -74,7 +74,7 @@ COND_MPI_CPPFLAGS = $(FC_DEFINE)WITH_MPI
 COND_MPI_OBJECTS = $O/parallel.sharedmpi.o
 #COND_MPI_OBJECTS = $O/serial.shared.o
 
-MPI_INCLUDES =  -I/scinet/niagara/software/2019b/opt/intel-2019u4/openmpi/4.0.1-hpcx2.5/include
+MPI_INCLUDES =  -I/public1/soft/intel/2020/compilers_and_libraries_2020.4.304/linux/mpi/intel64/include
 
 #######################################
 ####

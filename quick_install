@@ -1,9 +1,9 @@
-source module_load
+#source module_load
 mkdir -p bin/ obj/
-./configure FC=ifort CC=icc MPIFC=mpif90 --with-mpi -enable-vectorization
-#./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-mpi
-make realclean
-#make all > compile_log
+./configure FC=ifort CC=icc MPIFC=mpiifort --with-mpi -enable-vectorization
+##./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-mpi
+m#ake realclean
+##make all > compile_log
 make meshfem3D
 make decompose_mesh
 make aux

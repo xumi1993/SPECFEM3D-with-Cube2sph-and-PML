@@ -1,0 +1,6 @@
+bin/
+obj/
+config.log
+config.status
+*.a
+./Makefile

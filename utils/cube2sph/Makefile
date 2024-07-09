@@ -1,6 +1,6 @@
 CC=icc
 FC=ifort
-MPIFC=mpif90
+MPIFC=mpiifort
 
 FCFLAGS=-O3 -traceback -module ./obj -I./obj -I. -I./include
 CFLAGS=-O3 -traceback -I./include
